@@ -2,7 +2,10 @@
 pragma solidity ^0.6.0;
 
 contract HelloWorld{
-    function Hello() public pure returns(string memory){
-        return "Hello World!";
+    
+    string private bonjour = "Hello World!";
+    
+    function hello() public view returns(string memory){
+        return bonjour;
     }
 }
